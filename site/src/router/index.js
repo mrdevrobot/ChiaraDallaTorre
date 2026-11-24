@@ -3,6 +3,8 @@ import HomePage from '../pages/HomePage.vue'
 import ChiSonoPage from '../pages/ChiSonoPage.vue'
 import LezioniPage from '../pages/LezioniPage.vue'
 import ContattiPage from '../pages/ContattiPage.vue'
+import LandingPage from '../pages/LandingPage.vue'
+import { LANDINGS, landingPath } from '../landing/data'
 
 const routes = [
   {
@@ -30,6 +32,12 @@ const routes = [
     name: 'Contatti',
     component: ContattiPage,
   },
+  ...LANDINGS.map((l) => ({
+    path: landingPath(l),
+    name: l.slug,
+    component: LandingPage,
+    props: { slug: l.slug },
+  })),
 ]
 
 export const makeRouter = (history) => createRouter({

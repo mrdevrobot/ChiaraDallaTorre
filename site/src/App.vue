@@ -2,7 +2,7 @@
   <div id="app-root">
     <SiteHeader />
     <main>
-      <router-view />
+      <router-view :key="$route.path" />
     </main>
     <SiteFooter />
   </div>

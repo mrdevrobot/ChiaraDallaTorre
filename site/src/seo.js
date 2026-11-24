@@ -1,12 +1,14 @@
 import { useHead } from '@unhead/vue'
+import { LANDINGS, ZONE, landingPath } from './landing/data'
 
 export const SITE_URL = 'https://chiaradallatorre.it'
-export const PAGES = ['/', '/chi-sono/', '/lezioni/', '/contatti/']
+export const STUDIO_ID = `${SITE_URL}/#studio`
+export const PAGES = ['/', '/chi-sono/', '/lezioni/', '/contatti/', ...LANDINGS.map(landingPath)]
 
 const BUSINESS = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  '@id': `${SITE_URL}/#studio`,
+  '@id': STUDIO_ID,
   name: 'Chiara Dalla Torre - Pianoforte',
   url: `${SITE_URL}/`,
   image: `${SITE_URL}/og-image.jpg`,
@@ -19,6 +21,7 @@ const BUSINESS = {
     addressRegion: 'VE',
     addressCountry: 'IT',
   },
+  areaServed: [...new Set(ZONE.flatMap((z) => z.areas))].map((name) => ({ '@type': 'Place', name })),
   founder: {
     '@type': 'Person',
     name: 'Chiara Dalla Torre',
@@ -28,7 +31,7 @@ const BUSINESS = {
 }
 
 // Head completo di una pagina. `path` con lo slash finale, come nella sitemap.
-export function usePageSeo({ path, title, description, keywords }) {
+export function usePageSeo({ path, title, description, keywords, schema }) {
   const url = SITE_URL + path
   const image = `${SITE_URL}/og-image.jpg`
   useHead({
@@ -37,7 +40,7 @@ export function usePageSeo({ path, title, description, keywords }) {
     link: [{ rel: 'canonical', href: url }],
     meta: [
       { name: 'description', content: description },
-      { name: 'keywords', content: keywords },
+      ...(keywords ? [{ name: 'keywords', content: keywords }] : []),
       { property: 'og:title', content: title },
       { property: 'og:description', content: description },
       { property: 'og:url', content: url },
@@ -48,9 +51,9 @@ export function usePageSeo({ path, title, description, keywords }) {
       { property: 'og:locale', content: 'it_IT' },
       { name: 'twitter:card', content: 'summary_large_image' },
     ],
-    script:
-      path === '/'
-        ? [{ type: 'application/ld+json', innerHTML: JSON.stringify(BUSINESS) }]
-        : [],
+    script: (schema ? [BUSINESS, schema] : path === '/' ? [BUSINESS] : []).map((data) => ({
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(data),
+    })),
   })
 }

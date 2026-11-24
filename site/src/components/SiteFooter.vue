@@ -28,6 +28,12 @@
           </p>
         </div>
       </div>
+      <nav class="footer__more" aria-label="Zone e percorsi">
+        <div v-for="g in groups" :key="g.title">
+          <h4>{{ g.title }}</h4>
+          <router-link v-for="l in g.items" :key="l.slug" :to="landingPath(l)">{{ l.nav }}</router-link>
+        </div>
+      </nav>
       <div class="footer__bottom">
         <p>&copy; {{ year }} Chiara Dalla Torre. Tutti i diritti riservati.</p>
       </div>
@@ -36,6 +42,12 @@
 </template>
 
 <script setup>
+import { PERCORSI, ZONE, landingPath } from '@/landing/data'
+
+const groups = [
+  { title: 'Percorsi', items: PERCORSI },
+  { title: 'Lezioni di pianoforte per zona', items: ZONE },
+]
 const year = new Date().getFullYear()
 </script>
 
@@ -107,6 +119,30 @@ const year = new Date().getFullYear()
 }
 
 .footer__contact a:hover {
+  color: var(--color-accent);
+}
+
+.footer__more {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer__more h4 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.footer__more a {
+  display: inline-block;
+  margin: 0 1.25rem 0.4rem 0;
+  font-size: 0.85rem;
+  color: rgba(240, 236, 228, 0.7);
+}
+
+.footer__more a:hover {
   color: var(--color-accent);
 }
 

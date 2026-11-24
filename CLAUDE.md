@@ -16,6 +16,8 @@ Tailwind: non migrare se non richiesto). Tutto sta in `site/`:
 - SEO: `src/seo.js` (`usePageSeo`, dati strutturati, elenco `PAGES`). La build passa da
   `scripts/prerender.mjs`, che scrive un HTML per pagina e `sitemap.xml`
 - URL con lo slash finale; una pagina nuova va in `PAGES` e nel router
+- pagine SEO di zona e di percorso: testi in `src/landing/data.js`, da cui nascono rotte,
+  footer e sitemap. Ogni pagina ha contenuto proprio: niente copie con la sola città cambiata
 - foto: usare le `.webp`; i `.JPG` in `src/assets/images` sono gli originali
 - niente `window`/`document` fuori da `onMounted` o dagli eventi: romperebbe il prerender
 
