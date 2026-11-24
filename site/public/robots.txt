@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://chiaradallatorre.it/sitemap.xml
+Sitemap: https://www.chiaradallatorre.it/sitemap.xml

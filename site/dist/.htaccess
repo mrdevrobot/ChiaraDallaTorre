@@ -1,8 +1,8 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 # Pagina Musica eliminata: contenuto in Chi Sono
-RewriteRule ^musica/?$ https://chiaradallatorre.it/chi-sono/#voci-dal-silenzio [R=301,NE,L]
-# Un solo nome: www -> senza www
-RewriteCond %{HTTP_HOST} ^www\.chiaradallatorre\.it$ [NC]
-RewriteRule ^(.*)$ https://chiaradallatorre.it/$1 [R=301,L]
+RewriteRule ^musica/?$ https://www.chiaradallatorre.it/chi-sono/#voci-dal-silenzio [R=301,NE,L]
+# Un solo nome: senza www -> www
+RewriteCond %{HTTP_HOST} ^chiaradallatorre\.it$ [NC]
+RewriteRule ^(.*)$ https://www.chiaradallatorre.it/$1 [R=301,L]
 </IfModule>

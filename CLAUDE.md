@@ -1,7 +1,7 @@
 # Sito di Chiara Dalla Torre
 
 Sito vetrina di Chiara Dalla Torre, pianista e insegnante di pianoforte. Dominio:
-`chiaradallatorre.it`. È un sito a sé, fuori dal repo multi-cliente
+`www.chiaradallatorre.it` (senza `www` fa 301 verso `www`). È un sito a sé, fuori dal repo multi-cliente
 `../WebSites`, ma segue lo stesso modo di lavorare: in caso di dubbio valgono
 `../WebSites/CLAUDE.md` e le skill in `../WebSites/.claude/skills/`.
 

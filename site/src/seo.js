@@ -1,7 +1,7 @@
 import { useHead } from '@unhead/vue'
 import { LANDINGS, ZONE, landingPath } from './landing/data'
 
-export const SITE_URL = 'https://chiaradallatorre.it'
+export const SITE_URL = 'https://www.chiaradallatorre.it'
 export const STUDIO_ID = `${SITE_URL}/#studio`
 export const PAGES = ['/', '/chi-sono/', '/lezioni/', '/contatti/', ...LANDINGS.map(landingPath)]
 
