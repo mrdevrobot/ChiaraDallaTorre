@@ -190,23 +190,16 @@
 
 <script setup>
 import { reactive, ref } from 'vue'
-import { useHead } from '@unhead/vue'
+import { usePageSeo } from '@/seo'
 import SiteIcon from '@/components/SiteIcon.vue'
 
-useHead({
+usePageSeo({
+  path: '/contatti/',
   title: 'Contatti | Chiara Dalla Torre - Pianoforte',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Contatta Chiara Dalla Torre per informazioni sulle lezioni di pianoforte a Noventa di Piave. Prima lezione conoscitiva senza impegno.',
-    },
-    {
-      name: 'keywords',
-      content:
-        'contatti insegnante pianoforte, lezioni pianoforte Noventa di Piave, lezioni pianoforte San Donà di Piave, prenota lezione pianoforte, informazioni corsi pianoforte',
-    },
-  ],
+  description:
+    'Contatta Chiara Dalla Torre per informazioni sulle lezioni di pianoforte a Noventa di Piave. Prima lezione conoscitiva senza impegno.',
+  keywords:
+    'contatti insegnante pianoforte, lezioni pianoforte Noventa di Piave, lezioni pianoforte San Donà di Piave, prenota lezione pianoforte, informazioni corsi pianoforte',
 })
 
 const form = reactive({

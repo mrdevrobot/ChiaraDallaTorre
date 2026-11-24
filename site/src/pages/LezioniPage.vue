@@ -142,7 +142,7 @@
                 <li>Teoria base</li>
               </ul>
             </div>
-            <router-link to="/contatti" class="btn btn--primary package__btn">
+            <router-link to="/contatti/" class="btn btn--primary package__btn">
               Richiedi Info
             </router-link>
           </div>
@@ -158,7 +158,7 @@
                 <li>Possibilità di certificazioni in conservatorio</li>
               </ul>
             </div>
-            <router-link to="/contatti" class="btn btn--outline package__btn">
+            <router-link to="/contatti/" class="btn btn--outline package__btn">
               Richiedi Info
             </router-link>
           </div>
@@ -178,7 +178,7 @@
                 <li>Possibilità di certificazioni in conservatorio</li>
               </ul>
             </div>
-            <router-link to="/contatti" class="btn btn--outline package__btn">
+            <router-link to="/contatti/" class="btn btn--outline package__btn">
               Richiedi Info
             </router-link>
           </div>
@@ -249,7 +249,7 @@
             </div>
           </div>
           <img
-            src="@/assets/images/chiara_con_alunna.JPG"
+            src="@/assets/images/chiara_con_alunna.webp"
             alt="Chiara Dalla Torre durante una lezione di pianoforte"
             class="location__photo"
             loading="lazy"
@@ -267,7 +267,7 @@
           La prima lezione conoscitiva è senza impegno. Contattami per fissare
           un appuntamento e scoprire il percorso più adatto a te.
         </p>
-        <router-link to="/contatti" class="btn btn--light" style="margin-top: 1.5rem;">
+        <router-link to="/contatti/" class="btn btn--light" style="margin-top: 1.5rem;">
           Prenota una Lezione di Prova
         </router-link>
       </div>
@@ -276,23 +276,16 @@
 </template>
 
 <script setup>
-import { useHead } from '@unhead/vue'
+import { usePageSeo } from '@/seo'
 import SiteIcon from '@/components/SiteIcon.vue'
 
-useHead({
+usePageSeo({
+  path: '/lezioni/',
   title: 'Lezioni di Pianoforte | Chiara Dalla Torre',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Lezioni di pianoforte individuali a Noventa di Piave per tutti i livelli: base, intermedio e avanzato. Pianoforte principale, complementare e teoria musicale.',
-    },
-    {
-      name: 'keywords',
-      content:
-        'lezioni pianoforte Noventa di Piave, lezioni pianoforte San Donà di Piave, corsi pianoforte principianti, lezioni pianoforte avanzato, pianoforte complementare, teoria musicale, insegnante privato pianoforte Veneto',
-    },
-  ],
+  description:
+    'Lezioni di pianoforte individuali a Noventa di Piave per tutti i livelli: base, intermedio e avanzato. Pianoforte principale, complementare e teoria musicale.',
+  keywords:
+    'lezioni pianoforte Noventa di Piave, lezioni pianoforte San Donà di Piave, corsi pianoforte principianti, lezioni pianoforte avanzato, pianoforte complementare, teoria musicale, insegnante privato pianoforte Veneto',
 })
 </script>
 

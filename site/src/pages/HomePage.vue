@@ -13,8 +13,8 @@
           espressione e passione si fondono in un'esperienza unica.
         </p>
         <div class="hero__actions">
-          <router-link to="/lezioni" class="btn btn--primary">Scopri le Lezioni</router-link>
-          <router-link to="/chi-sono" class="btn btn--outline">Il Mio Percorso</router-link>
+          <router-link to="/lezioni/" class="btn btn--primary">Scopri le Lezioni</router-link>
+          <router-link to="/chi-sono/" class="btn btn--outline">Il Mio Percorso</router-link>
         </div>
       </div>
     </section>
@@ -26,7 +26,7 @@
           <div class="intro__image">
             <div class="intro__image-frame">
               <img
-                src="@/assets/images/chiara_primopiano.JPG"
+                src="@/assets/images/chiara_primopiano.webp"
                 alt="Chiara Dalla Torre al pianoforte"
                 class="intro__image-photo"
                 loading="lazy"
@@ -50,7 +50,7 @@
               di trasmettere non solo la tecnica, ma anche la gioia e la profondità
               che la musica sa offrire.
             </p>
-            <router-link to="/chi-sono" class="btn btn--outline" style="margin-top: 1rem;">
+            <router-link to="/chi-sono/" class="btn btn--outline" style="margin-top: 1rem;">
               Scopri di più su di me
             </router-link>
           </div>
@@ -110,7 +110,7 @@
           Scrivimi per una lezione di prova o per ricevere tutte le informazioni
           di cui hai bisogno.
         </p>
-        <router-link to="/contatti" class="btn btn--light" style="margin-top: 1rem;">
+        <router-link to="/contatti/" class="btn btn--light" style="margin-top: 1rem;">
           Contattami per Informazioni
         </router-link>
       </div>
@@ -119,29 +119,16 @@
 </template>
 
 <script setup>
-import { useHead } from '@unhead/vue'
+import { usePageSeo } from '@/seo'
 import SiteIcon from '@/components/SiteIcon.vue'
 
-useHead({
+usePageSeo({
+  path: '/',
   title: 'Chiara Dalla Torre | Pianoforte',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Chiara Dalla Torre, pianista diplomata al Conservatorio A. Steffani. Lezioni di pianoforte per principianti, intermedi e avanzati a Noventa di Piave.',
-    },
-    {
-      name: 'keywords',
-      content:
-        'lezioni pianoforte, insegnante pianoforte, pianoforte Noventa di Piave, pianoforte San Donà di Piave, Chiara Dalla Torre, corsi pianoforte Veneto',
-    },
-    { property: 'og:title', content: 'Chiara Dalla Torre | Pianoforte' },
-    {
-      property: 'og:description',
-      content:
-        'Lezioni di pianoforte per tutti i livelli a Noventa di Piave. Diplomata al Conservatorio A. Steffani di Castelfranco Veneto.',
-    },
-  ],
+  description:
+    'Chiara Dalla Torre, pianista diplomata al Conservatorio A. Steffani. Lezioni di pianoforte per principianti, intermedi e avanzati a Noventa di Piave.',
+  keywords:
+    'lezioni pianoforte, insegnante pianoforte, pianoforte Noventa di Piave, pianoforte San Donà di Piave, Chiara Dalla Torre, corsi pianoforte Veneto',
 })
 </script>
 
@@ -155,7 +142,7 @@ useHead({
   position: relative;
   background:
     linear-gradient(135deg, rgba(44, 24, 16, 0.88) 0%, rgba(61, 35, 23, 0.85) 50%, rgba(26, 14, 8, 0.92) 100%),
-    url('@/assets/images/mani_pianoforte_1_bn.JPG') center/cover no-repeat;
+    url('@/assets/images/mani_pianoforte_1_bn.webp') center/cover no-repeat;
   overflow: hidden;
 }
 

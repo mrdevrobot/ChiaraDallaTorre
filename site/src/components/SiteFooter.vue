@@ -13,9 +13,9 @@
         <div class="footer__links">
           <h4>Navigazione</h4>
           <router-link to="/">Home</router-link>
-          <router-link to="/chi-sono">Chi Sono</router-link>
-          <router-link to="/lezioni">Lezioni</router-link>
-          <router-link to="/contatti">Contatti</router-link>
+          <router-link to="/chi-sono/">Chi Sono</router-link>
+          <router-link to="/lezioni/">Lezioni</router-link>
+          <router-link to="/contatti/">Contatti</router-link>
         </div>
         <div class="footer__contact">
           <h4>Contatti</h4>

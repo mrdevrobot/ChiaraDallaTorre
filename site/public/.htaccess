@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+# Pagina Musica eliminata: contenuto in Chi Sono
+RewriteRule ^musica/?$ /chi-sono/#voci-dal-silenzio [R=301,NE,L]
+</IfModule>

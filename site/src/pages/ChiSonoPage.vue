@@ -65,7 +65,7 @@
           </div>
           <div class="bio__sidebar">
             <img
-              src="@/assets/images/chiara_al_pianoforte_bn.JPG"
+              src="@/assets/images/chiara_al_pianoforte_bn.webp"
               alt="Chiara Dalla Torre al pianoforte"
               class="bio__image-photo"
               loading="lazy"
@@ -185,7 +185,7 @@
               <cite>— Jim Rohn</cite>
             </div>
             <img
-              src="@/assets/images/mani_pianoforte_2_bn.JPG"
+              src="@/assets/images/mani_pianoforte_2_bn.webp"
               alt="Mani al pianoforte - disciplina e arte"
               class="martial__image-photo"
               loading="lazy"
@@ -248,7 +248,7 @@
         </div>
 
         <div style="text-align: center; margin-top: 2.5rem;">
-          <router-link to="/lezioni" class="btn btn--primary">
+          <router-link to="/lezioni/" class="btn btn--primary">
             Scopri le mie Lezioni
           </router-link>
         </div>
@@ -264,7 +264,7 @@
           Scrivimi per scoprire come possiamo iniziare insieme un percorso musicale
           su misura per te.
         </p>
-        <router-link to="/contatti" class="btn btn--light" style="margin-top: 1.5rem;">
+        <router-link to="/contatti/" class="btn btn--light" style="margin-top: 1.5rem;">
           Contattami
         </router-link>
       </div>
@@ -273,22 +273,15 @@
 </template>
 
 <script setup>
-import { useHead } from '@unhead/vue'
+import { usePageSeo } from '@/seo'
 
-useHead({
+usePageSeo({
+  path: '/chi-sono/',
   title: 'Chi Sono | Chiara Dalla Torre - Pianoforte',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Scopri il percorso di Chiara Dalla Torre: dagli studi al Conservatorio Steffani alle Masterclass internazionali, dalle arti marziali alla didattica pianistica.',
-    },
-    {
-      name: 'keywords',
-      content:
-        'Chiara Dalla Torre biografia, pianista San Donà di Piave, Conservatorio Steffani, arti marziali e musica, compositrici donne, Clara Schumann, Fanny Mendelssohn, insegnante pianoforte',
-    },
-  ],
+  description:
+    'Scopri il percorso di Chiara Dalla Torre: dagli studi al Conservatorio Steffani alle Masterclass internazionali, dalle arti marziali alla didattica pianistica.',
+  keywords:
+    'Chiara Dalla Torre biografia, pianista San Donà di Piave, Conservatorio Steffani, arti marziali e musica, compositrici donne, Clara Schumann, Fanny Mendelssohn, insegnante pianoforte',
 })
 </script>
 

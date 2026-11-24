@@ -1,5 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter } from 'vue-router'
 import HomePage from '../pages/HomePage.vue'
+import ChiSonoPage from '../pages/ChiSonoPage.vue'
+import LezioniPage from '../pages/LezioniPage.vue'
+import ContattiPage from '../pages/ContattiPage.vue'
 
 const routes = [
   {
@@ -8,29 +11,29 @@ const routes = [
     component: HomePage,
   },
   {
-    path: '/chi-sono',
+    path: '/chi-sono/',
     name: 'ChiSono',
-    component: () => import('../pages/ChiSonoPage.vue'),
+    component: ChiSonoPage,
   },
   {
-    path: '/lezioni',
+    path: '/lezioni/',
     name: 'Lezioni',
-    component: () => import('../pages/LezioniPage.vue'),
+    component: LezioniPage,
   },
   {
     // Pagina eliminata: il contenuto rimasto è in Chi Sono
     path: '/musica',
-    redirect: '/chi-sono#voci-dal-silenzio',
+    redirect: '/chi-sono/#voci-dal-silenzio',
   },
   {
-    path: '/contatti',
+    path: '/contatti/',
     name: 'Contatti',
-    component: () => import('../pages/ContattiPage.vue'),
+    component: ContattiPage,
   },
 ]
 
-const router = createRouter({
-  history: createWebHistory(),
+export const makeRouter = (history) => createRouter({
+  history,
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) return savedPosition
@@ -38,5 +41,3 @@ const router = createRouter({
     return { top: 0, behavior: 'smooth' }
   },
 })
-
-export default router

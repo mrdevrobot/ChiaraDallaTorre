@@ -28,7 +28,7 @@
         >
           {{ link.label }}
         </router-link>
-        <router-link to="/contatti" class="btn btn--primary header__cta" @click="closeMenu">
+        <router-link to="/contatti/" class="btn btn--primary header__cta" @click="closeMenu">
           Contattami
         </router-link>
       </nav>
@@ -44,9 +44,9 @@ const menuOpen = ref(false)
 
 const links = [
   { to: '/', label: 'Home' },
-  { to: '/chi-sono', label: 'Chi Sono' },
-  { to: '/lezioni', label: 'Lezioni' },
-  { to: '/contatti', label: 'Contatti' },
+  { to: '/chi-sono/', label: 'Chi Sono' },
+  { to: '/lezioni/', label: 'Lezioni' },
+  { to: '/contatti/', label: 'Contatti' },
 ]
 
 const closeMenu = () => {

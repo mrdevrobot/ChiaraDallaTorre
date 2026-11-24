@@ -133,3 +133,6 @@ out
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Build SSR temporanea del prerender
+site/.ssr
