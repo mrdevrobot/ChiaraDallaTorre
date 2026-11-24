@@ -42,5 +42,4 @@ Applicato il 2026-11-24.
 
 ### Decisioni del 2026-11-24
 - Sabato pomeriggio: aggiunto anche in Contatti, dove il PDF riportava solo il giovedì.
-- Modulo di contatto: da rendere reale (branch `feat/contact-form`), da unire solo dopo
-  le verifiche sul server.
+- Modulo di contatto reso reale (vedi CLAUDE.md).

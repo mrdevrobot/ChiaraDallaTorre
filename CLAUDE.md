@@ -51,15 +51,22 @@ headless: la revisione visiva la fa l'utente.
 
 ## Pubblicazione
 
-Solo su richiesta esplicita. Con `dist` committato lo schema atteso è Plesk Git, come
-nella sezione "Siti pubblicati con Plesk Git" della skill `rilascio-produzione` di
-WebSites, **ma per questo dominio non è ancora stato verificato**: controllarlo prima del
-primo rilascio, insieme al 301 di `/musica` (in `public/.htaccess`).
+Si pubblica direttamente su Plesk, su richiesta. Il dominio usa Plesk Git (pull, ramo
+`main`); document root `httpdocs/site/dist`. Push con l'account GitHub `mrdevrobot`, poi
+via SSH (accesso in `../WebSites/deploy/.env`):
 
-## Limiti noti
+1. backup: `tar czf /root/backup-chiaradallatorre.it-<data>.tgz -C <httpdocs> .`
+2. `plesk ext git --async-deploy -domain chiaradallatorre.it -name ChiaraDallaTorre.git`
+   (mai `--deploy`)
+3. `--get-last-commit` e confronto degli md5 tra `site/dist` e server
 
-- Il modulo di Contatti è **simulato**: mostra "Messaggio Inviato" ma non spedisce nulla.
-  Per renderlo reale: sezione "Modulo di contatto" della skill `rilascio-produzione`.
+## Modulo di contatto
+
+`site/public/contact.php` (copiato in `dist`) scrive a dallatorrechiara@yahoo.it; lo chiama
+`ContattiPage.vue`. Mittente `noreply@chiaradallatorre.it`, inoltrato da Postfix ad Azure
+con la regola generica (nome visualizzato "Modulo contatti sito web"). Antispam: honeypot,
+5 invii/ora per IP, Turnstile (segreto in `/var/www/vhosts/chiaradallatorre.it/turnstile.secret`,
+mai nel repo). Le prove si fanno con un destinatario interno, non con Chiara.
 
 ## Git
 

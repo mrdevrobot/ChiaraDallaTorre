@@ -103,9 +103,24 @@
                 </label>
               </div>
 
-              <button type="submit" class="btn btn--primary" :disabled="submitted">
-                {{ submitted ? 'Messaggio Inviato' : 'Invia Messaggio' }}
+              <div class="form__hp" aria-hidden="true">
+                <label for="website">Sito web (non compilare)</label>
+                <input id="website" v-model="website" type="text" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <div ref="turnstileEl" class="form__turnstile"></div>
+
+              <button type="submit" class="btn btn--primary" :disabled="status === 'sending'">
+                {{ status === 'sending' ? 'Invio in corso…' : 'Invia Messaggio' }}
               </button>
+              <p v-if="status === 'sent'" class="form__status" role="status">
+                Messaggio inviato, grazie! Ti risponderò il prima possibile.
+              </p>
+              <p v-else-if="status === 'error'" class="form__status form__status--error" role="alert">
+                Il messaggio non è partito. Scrivimi a
+                <a href="mailto:dallatorrechiara@yahoo.it">dallatorrechiara@yahoo.it</a> o su
+                <a href="https://wa.me/393483046739" target="_blank" rel="noopener">WhatsApp</a>.
+              </p>
             </form>
           </div>
 
@@ -189,7 +204,7 @@
 </template>
 
 <script setup>
-import { reactive, ref } from 'vue'
+import { onBeforeUnmount, onMounted, reactive, ref } from 'vue'
 import { usePageSeo } from '@/seo'
 import SiteIcon from '@/components/SiteIcon.vue'
 
@@ -212,13 +227,60 @@ const form = reactive({
   privacy: false,
 })
 
-const submitted = ref(false)
+const website = ref('') // honeypot: resta vuoto per le persone
+const status = ref('idle') // idle | sending | sent | error
 
-const handleSubmit = () => {
-  // In production, this would send the form data to a backend
-  submitted.value = true
-  setTimeout(() => {
-    submitted.value = false
+// Antispam Cloudflare Turnstile: la site key è pubblica, il segreto sta sul server
+const TURNSTILE_SITE_KEY = '0x4AAAAAAGRQ3YCCF7ORjQ8r'
+const TURNSTILE_SRC = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit'
+const turnstileEl = ref(null)
+let token = ''
+let widgetId
+let timer
+
+const mountTurnstile = (tries = 0) => {
+  if (!turnstileEl.value || widgetId) return
+  if (!window.turnstile) {
+    if (tries < 50) timer = setTimeout(() => mountTurnstile(tries + 1), 200)
+    return
+  }
+  widgetId = window.turnstile.render(turnstileEl.value, {
+    sitekey: TURNSTILE_SITE_KEY,
+    language: 'it',
+    callback: (t) => { token = t },
+    'expired-callback': () => { token = '' },
+    'error-callback': () => { token = '' },
+  })
+}
+
+onMounted(() => {
+  if (!document.querySelector(`script[src="${TURNSTILE_SRC}"]`)) {
+    const script = document.createElement('script')
+    script.src = TURNSTILE_SRC
+    script.async = true
+    document.head.appendChild(script)
+  }
+  mountTurnstile()
+})
+
+onBeforeUnmount(() => {
+  clearTimeout(timer)
+  if (widgetId) window.turnstile?.remove(widgetId)
+})
+
+const handleSubmit = async () => {
+  if (status.value === 'sending') return
+  status.value = 'sending'
+  try {
+    const res = await fetch('/contact.php', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ...form, website: website.value, turnstile: token }),
+    })
+    // Senza PHP il server può rispondere 200 con la pagina HTML: conta solo ok === true
+    const data = await res.json()
+    if (!res.ok || data.ok !== true) throw new Error(String(res.status))
+    status.value = 'sent'
     Object.assign(form, {
       name: '',
       email: '',
@@ -228,7 +290,13 @@ const handleSubmit = () => {
       message: '',
       privacy: false,
     })
-  }, 3000)
+  } catch {
+    status.value = 'error'
+  } finally {
+    // Il token vale una sola volta
+    token = ''
+    if (widgetId) window.turnstile?.reset(widgetId)
+  }
 }
 </script>
 
@@ -334,6 +402,22 @@ const handleSubmit = () => {
 .form__checkbox input {
   margin-top: 0.15rem;
   flex-shrink: 0;
+}
+
+.form__hp {
+  display: none;
+}
+
+.form__turnstile {
+  margin-bottom: 1rem;
+}
+
+.form__status {
+  margin: 1rem 0 0;
+}
+
+.form__status--error {
+  color: #a4262c;
 }
 
 /* Contact Cards */
