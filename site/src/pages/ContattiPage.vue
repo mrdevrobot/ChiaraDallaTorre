@@ -75,9 +75,9 @@
                 <select id="interest" v-model="form.interest">
                   <option value="">Seleziona</option>
                   <option value="prova">Lezione di prova</option>
-                  <option value="scoperta">Pacchetto Scoperta (4 lezioni)</option>
-                  <option value="percorso">Pacchetto Percorso (12 lezioni)</option>
-                  <option value="intensivo">Pacchetto Intensivo (24 lezioni)</option>
+                  <option value="principale">Pianoforte Principale</option>
+                  <option value="complementare">Pianoforte Complementare</option>
+                  <option value="teoria">Teoria, Ritmica e Percezione Musicale</option>
                   <option value="info">Solo informazioni generali</option>
                 </select>
               </div>
@@ -118,21 +118,28 @@
                   <span class="contact__icon"><SiteIcon name="mapPin" :size="20" /></span>
                   <div>
                     <strong>Studio</strong>
-                    <p>San Donà di Piave (VE)<br />Veneto, Italia</p>
+                    <p>Via Treponti 34<br />Noventa di Piave (VE)</p>
                   </div>
                 </div>
                 <div class="contact__detail">
                   <span class="contact__icon"><SiteIcon name="mail" :size="20" /></span>
                   <div>
                     <strong>Email</strong>
-                    <p><a href="mailto:info@chiaradallatorre.it">info@chiaradallatorre.it</a></p>
+                    <p><a href="mailto:dallatorrechiara@yahoo.it">dallatorrechiara@yahoo.it</a></p>
+                  </div>
+                </div>
+                <div class="contact__detail">
+                  <span class="contact__icon"><SiteIcon name="phone" :size="20" /></span>
+                  <div>
+                    <strong>Cellulare / WhatsApp</strong>
+                    <p><a href="https://wa.me/393483046739" target="_blank" rel="noopener">348 3046739</a></p>
                   </div>
                 </div>
                 <div class="contact__detail">
                   <span class="contact__icon"><SiteIcon name="clock" :size="20" /></span>
                   <div>
                     <strong>Disponibilità</strong>
-                    <p>Lunedì – Sabato<br />Pomeriggio e sera</p>
+                    <p>Lunedì – Sabato mattina<br />Giovedì e sabato pomeriggio</p>
                   </div>
                 </div>
               </div>
@@ -187,17 +194,17 @@ import { useHead } from '@unhead/vue'
 import SiteIcon from '@/components/SiteIcon.vue'
 
 useHead({
-  title: 'Contatti | Chiara Dalla Torre - Maestro di Pianoforte',
+  title: 'Contatti | Chiara Dalla Torre - Pianoforte',
   meta: [
     {
       name: 'description',
       content:
-        'Contatta Chiara Dalla Torre per informazioni sulle lezioni di pianoforte a San Donà di Piave. Prima lezione conoscitiva senza impegno.',
+        'Contatta Chiara Dalla Torre per informazioni sulle lezioni di pianoforte a Noventa di Piave. Prima lezione conoscitiva senza impegno.',
     },
     {
       name: 'keywords',
       content:
-        'contatti insegnante pianoforte, lezioni pianoforte San Donà di Piave, prenota lezione pianoforte, informazioni corsi pianoforte',
+        'contatti insegnante pianoforte, lezioni pianoforte Noventa di Piave, lezioni pianoforte San Donà di Piave, prenota lezione pianoforte, informazioni corsi pianoforte',
     },
   ],
 })

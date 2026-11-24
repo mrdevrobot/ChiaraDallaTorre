@@ -7,7 +7,7 @@
         <span class="hero__greeting">Benvenuti</span>
         <h1 class="hero__title">Chiara Dalla Torre</h1>
         <div class="hero__divider"></div>
-        <p class="hero__subtitle">Maestro di Pianoforte</p>
+        <p class="hero__subtitle">Pianoforte</p>
         <p class="hero__desc">
           Un percorso musicale pensato per ogni allievo, dove tecnica,
           espressione e passione si fondono in un'esperienza unica.
@@ -27,15 +27,13 @@
             <div class="intro__image-frame">
               <img
                 src="@/assets/images/chiara_primopiano.JPG"
-                alt="Chiara Dalla Torre - Maestro di Pianoforte"
+                alt="Chiara Dalla Torre al pianoforte"
                 class="intro__image-photo"
                 loading="lazy"
               />
             </div>
           </div>
           <div class="intro__text">
-            <h2>La Musica come Linguaggio dell'Anima</h2>
-            <div class="section__divider" style="margin-left: 0;"></div>
             <p>
               Nata a San Donà di Piave nel 1993, ho iniziato lo studio del pianoforte
               all'età di 9 anni, e da allora la musica è diventata il filo conduttore
@@ -71,79 +69,33 @@
         </p>
         <div class="grid grid--3">
           <div class="card pillar">
-            <div class="pillar__icon"><SiteIcon name="music" :size="32" color="var(--color-secondary)" /></div>
-            <h3>Musica</h3>
+            <div class="pillar__icon"><SiteIcon name="target" :size="32" color="var(--color-secondary)" /></div>
+            <h3>Presenza</h3>
             <p>
-              Anni di formazione al Conservatorio, esperienze concertistiche
-              internazionali e una produzione discografica. La musica classica
-              come fondamento, l'apertura verso repertori meno conosciuti come
-              arricchimento.
+              Partecipazione attiva: uno scambio continuo tra allievo e insegnante.
+              Concentrazione sul momento presente e desiderio di migliorarsi
+              continuamente.
             </p>
-            <router-link to="/musica" class="pillar__link">Esplora →</router-link>
           </div>
           <div class="card pillar">
             <div class="pillar__icon"><SiteIcon name="shield" :size="32" color="var(--color-secondary)" /></div>
             <h3>Disciplina</h3>
             <p>
               La pratica delle arti marziali mi ha insegnato la perseveranza,
-              il controllo del corpo e della mente, e la pazienza nel percorso
-              di crescita — qualità che porto ogni giorno nell'insegnamento.
+              la costanza, il controllo del corpo e della mente. E la pazienza:
+              normalizzare il tempo che si impiega per raggiungere un obiettivo,
+              lavorare con calma e ad hoc per ogni allievo, avere il tempo di maturare
+              a livello musicale e la calma di curare i piccoli dettagli.
             </p>
-            <router-link to="/chi-sono#arti-marziali" class="pillar__link">Scopri →</router-link>
           </div>
           <div class="card pillar">
-            <div class="pillar__icon"><SiteIcon name="book" :size="32" color="var(--color-secondary)" /></div>
-            <h3>Didattica</h3>
+            <div class="pillar__icon"><SiteIcon name="music" :size="32" color="var(--color-secondary)" /></div>
+            <h3>Passione</h3>
             <p>
-              Un approccio metodologico affinato negli anni, dal tirocinio attivo
-              alla formazione continua. Lezioni personalizzate per ogni livello,
-              con attenzione alle esigenze di ciascun allievo.
-            </p>
-            <router-link to="/lezioni" class="pillar__link">Scopri →</router-link>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Livelli -->
-    <section class="section levels">
-      <div class="container">
-        <h2 class="section__title">Lezioni per Ogni Livello</h2>
-        <div class="section__divider"></div>
-        <p class="section__subtitle">
-          Che tu stia muovendo i primi passi sulla tastiera o desideri perfezionare
-          la tua tecnica, c'è un percorso pensato per te.
-        </p>
-        <div class="grid grid--3">
-          <div class="card level-card">
-            <span class="level-card__badge level-card__badge--base">Base</span>
-            <h3>Principianti</h3>
-            <p>
-              Per chi si avvicina al pianoforte per la prima volta.
-              Fondamenti di tecnica, lettura musicale e prime esecuzioni.
+              Insegnare con trasporto, stimolare, lasciarsi emozionare, imparare
+              a sentire e a trasmettere un contenuto attraverso il suono.
             </p>
           </div>
-          <div class="card level-card level-card--featured">
-            <span class="level-card__badge level-card__badge--inter">Intermedio</span>
-            <h3>Progrediti</h3>
-            <p>
-              Approfondimento tecnico, sviluppo dell'interpretazione
-              e avvicinamento a repertori più complessi.
-            </p>
-          </div>
-          <div class="card level-card">
-            <span class="level-card__badge level-card__badge--adv">Avanzato</span>
-            <h3>Perfezionamento</h3>
-            <p>
-              Preparazione a esami, concorsi e concerti.
-              Lavoro interpretativo avanzato e repertorio solistico.
-            </p>
-          </div>
-        </div>
-        <div style="text-align: center; margin-top: 2.5rem;">
-          <router-link to="/lezioni" class="btn btn--primary">
-            Scopri i Pacchetti Lezioni
-          </router-link>
         </div>
       </div>
     </section>
@@ -171,23 +123,23 @@ import { useHead } from '@unhead/vue'
 import SiteIcon from '@/components/SiteIcon.vue'
 
 useHead({
-  title: 'Chiara Dalla Torre | Maestro di Pianoforte',
+  title: 'Chiara Dalla Torre | Pianoforte',
   meta: [
     {
       name: 'description',
       content:
-        'Chiara Dalla Torre - Maestro di Pianoforte diplomata al Conservatorio A. Steffani. Lezioni di pianoforte per principianti, intermedi e avanzati a San Donà di Piave.',
+        'Chiara Dalla Torre, pianista diplomata al Conservatorio A. Steffani. Lezioni di pianoforte per principianti, intermedi e avanzati a Noventa di Piave.',
     },
     {
       name: 'keywords',
       content:
-        'lezioni pianoforte, insegnante pianoforte, pianoforte San Donà di Piave, Chiara Dalla Torre, corsi pianoforte Veneto',
+        'lezioni pianoforte, insegnante pianoforte, pianoforte Noventa di Piave, pianoforte San Donà di Piave, Chiara Dalla Torre, corsi pianoforte Veneto',
     },
-    { property: 'og:title', content: 'Chiara Dalla Torre | Maestro di Pianoforte' },
+    { property: 'og:title', content: 'Chiara Dalla Torre | Pianoforte' },
     {
       property: 'og:description',
       content:
-        'Lezioni di pianoforte per tutti i livelli a San Donà di Piave. Diplomata al Conservatorio A. Steffani di Castelfranco Veneto.',
+        'Lezioni di pianoforte per tutti i livelli a Noventa di Piave. Diplomata al Conservatorio A. Steffani di Castelfranco Veneto.',
     },
   ],
 })
@@ -320,10 +272,6 @@ useHead({
   z-index: 1;
 }
 
-.intro__text h2 {
-  margin-bottom: 0.5rem;
-}
-
 @media (max-width: 768px) {
   .intro__grid {
     grid-template-columns: 1fr;
@@ -348,55 +296,6 @@ useHead({
 }
 
 .pillar h3 {
-  margin-bottom: 1rem;
-}
-
-.pillar__link {
-  display: inline-block;
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--color-secondary);
-}
-
-/* Level Cards */
-.level-card {
-  text-align: center;
-  padding: 2.5rem 2rem;
-  position: relative;
-}
-
-.level-card--featured {
-  border: 2px solid var(--color-accent);
-}
-
-.level-card__badge {
-  display: inline-block;
-  padding: 0.3rem 1rem;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.level-card__badge--base {
-  background: #e8f5e9;
-  color: #2e7d32;
-}
-
-.level-card__badge--inter {
-  background: #fff3e0;
-  color: #e65100;
-}
-
-.level-card__badge--adv {
-  background: #e3f2fd;
-  color: #1565c0;
-}
-
-.level-card h3 {
   margin-bottom: 1rem;
 }
 

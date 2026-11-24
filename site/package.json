@@ -11,7 +11,7 @@
   "keywords": ["pianoforte", "lezioni", "piano", "insegnante"],
   "author": "Chiara Dalla Torre",
   "license": "ISC",
-  "description": "Sito web di Chiara Dalla Torre - Maestro di Pianoforte",
+  "description": "Sito web di Chiara Dalla Torre - Pianoforte",
   "dependencies": {
     "@unhead/vue": "^2.1.4",
     "vue": "^3.5.28",

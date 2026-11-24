@@ -1,0 +1,64 @@
+# Sito di Chiara Dalla Torre
+
+Sito vetrina di Chiara Dalla Torre, pianista e insegnante di pianoforte. Dominio:
+`chiaradallatorre.it`. È un sito a sé, fuori dal repo multi-cliente
+`../WebSites`, ma segue lo stesso modo di lavorare: in caso di dubbio valgono
+`../WebSites/CLAUDE.md` e le skill in `../WebSites/.claude/skills/`.
+
+## Stack e comandi
+
+Vue 3 + Vite + vue-router + `@unhead/vue`, SPA senza SSR, CSS a mano (non Nuxt, non
+Tailwind: non migrare se non richiesto). Tutto sta in `site/`:
+
+- `npm ci`, `npm run dev` (porta 5173), `npm run build`, `npm run preview`
+- `src/pages/` una pagina per file; `src/components/` header, footer, icone SVG
+- `src/assets/main.css`: colori e font come variabili CSS, da usare al posto degli HEX
+- titolo e descrizione di ogni pagina in `useHead`; quelli di base in `index.html`
+
+`site/dist` è **committato**: dopo ogni modifica ai sorgenti rifare la build e tenere
+`dist` nello stesso commit. Non modificarlo a mano.
+
+## Dati reali
+
+| Campo | Valore |
+|---|---|
+| Studio | Via Treponti 34, Noventa di Piave (VE) |
+| Email | dallatorrechiara@yahoo.it |
+| Cellulare / WhatsApp | 348 3046739 (`wa.me/393483046739`) |
+
+Fonte: PDF "Modifiche sito", novembre 2026. San Donà di Piave è il luogo di nascita, non
+lo studio: resta nella biografia e nelle parole chiave. Email e indirizzo compaiono in
+footer e Contatti, l'indirizzo anche in Lezioni: aggiornarli insieme.
+
+## Modifiche della cliente
+
+1. Ogni giro di modifiche si registra in `MODIFICHE.md`: richieste, cosa è stato fatto,
+   punti da chiarire con Chiara.
+2. I testi di Chiara si riportano fedelmente; si correggono solo lingua e punteggiatura,
+   e le correzioni si annotano. Non inventare esperienze, numeri, prezzi o recensioni.
+3. Una modifica vale ovunque: controllare header, footer, meta, opzioni del modulo e
+   testi collegati (`grep` in `src` e `index.html`).
+4. Pagina eliminata: aggiungere il redirect in `src/router/index.js`.
+
+## Verifica
+
+Build senza errori e pagine che rispondono in `npm run preview`. Non installare browser
+headless: la revisione visiva la fa l'utente.
+
+## Pubblicazione
+
+Solo su richiesta esplicita. Con `dist` committato lo schema atteso è Plesk Git, come
+nella sezione "Siti pubblicati con Plesk Git" della skill `rilascio-produzione` di
+WebSites, **ma per questo dominio non è ancora stato verificato**: controllarlo prima del
+primo rilascio, insieme al fallback SPA (gli URL interni aperti direttamente devono
+servire `index.html`).
+
+## Limiti noti
+
+- Il modulo di Contatti è **simulato**: mostra "Messaggio Inviato" ma non spedisce nulla.
+  Per renderlo reale: sezione "Modulo di contatto" della skill `rilascio-produzione`.
+
+## Git
+
+Conventional Commits in inglese (`feat(lessons): …`, `fix(header): …`). Commit e push
+solo su richiesta.

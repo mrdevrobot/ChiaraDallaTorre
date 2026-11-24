@@ -3,7 +3,7 @@
     <div class="container header__inner">
       <router-link to="/" class="header__logo" @click="closeMenu">
         <span class="header__logo-name">Chiara Dalla Torre</span>
-        <span class="header__logo-sub">Maestro di Pianoforte</span>
+        <span class="header__logo-sub">Pianoforte</span>
       </router-link>
 
       <button
@@ -11,6 +11,7 @@
         :class="{ active: menuOpen }"
         @click="menuOpen = !menuOpen"
         aria-label="Menu"
+        :aria-expanded="menuOpen"
       >
         <span></span>
         <span></span>
@@ -45,7 +46,6 @@ const links = [
   { to: '/', label: 'Home' },
   { to: '/chi-sono', label: 'Chi Sono' },
   { to: '/lezioni', label: 'Lezioni' },
-  { to: '/musica', label: 'Musica' },
   { to: '/contatti', label: 'Contatti' },
 ]
 
@@ -222,12 +222,14 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    transition: right 0.3s ease;
+    visibility: hidden;
+    transition: right 0.3s ease, visibility 0.3s;
     box-shadow: var(--shadow-lg);
   }
 
   .header__nav.open {
     right: 0;
+    visibility: visible;
   }
 
   .header--open::before {
@@ -240,6 +242,24 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 
   .header__nav {
     z-index: 1000;
+  }
+
+  /* Il pannello è chiaro anche quando l'header è trasparente sull'hero marrone */
+  .header__link {
+    color: var(--color-text);
+  }
+
+  .header__link.router-link-active {
+    color: var(--color-secondary);
+  }
+
+  .header__toggle.active span {
+    background: var(--color-primary);
+  }
+
+  /* backdrop-filter renderebbe l'header il riferimento dei figli fixed */
+  .header--open {
+    backdrop-filter: none;
   }
 }
 </style>

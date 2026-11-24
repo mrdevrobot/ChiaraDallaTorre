@@ -18,9 +18,9 @@ const routes = [
     component: () => import('../pages/LezioniPage.vue'),
   },
   {
+    // Pagina eliminata: il contenuto rimasto è in Chi Sono
     path: '/musica',
-    name: 'Musica',
-    component: () => import('../pages/MusicaPage.vue'),
+    redirect: '/chi-sono#voci-dal-silenzio',
   },
   {
     path: '/contatti',

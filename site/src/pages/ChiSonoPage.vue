@@ -80,8 +80,8 @@
                 <span class="bio__highlight-label">Anni di studio</span>
               </div>
               <div class="bio__highlight">
-                <span class="bio__highlight-number">3</span>
-                <span class="bio__highlight-label">Paesi in concerto</span>
+                <span class="bio__highlight-number">2</span>
+                <span class="bio__highlight-label">Produzioni discografiche</span>
               </div>
             </div>
           </div>
@@ -95,7 +95,7 @@
         <h2 class="section__title">Esperienze Internazionali</h2>
         <div class="section__divider"></div>
         <p class="section__subtitle">
-          La musica non conosce confini: le mie esperienze oltre l'Italia
+          Le mie esperienze oltre l'Italia
         </p>
 
         <div class="timeline">
@@ -130,6 +130,13 @@
               <p>Concerto presso il rinomato Auditorium Maene nella capitale belga.</p>
             </div>
           </div>
+          <div class="timeline__item">
+            <div class="timeline__year">2024</div>
+            <div class="timeline__content">
+              <h3>Produzione Discografica</h3>
+              <p>Registrazione del progetto dedicato alle donne compositrici.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -153,45 +160,21 @@
               un mondo lontano dalla musica si è rivelato sorprendentemente complementare.
             </p>
 
-            <div class="martial__principles">
-              <div class="martial__principle">
-                <h4><SiteIcon name="body" :size="18" color="var(--color-accent)" /> Consapevolezza del Corpo</h4>
-                <p>
-                  Le arti marziali insegnano a percepire ogni parte del corpo con precisione.
-                  Al pianoforte, questa consapevolezza si traduce in un controllo più fine
-                  del gesto tecnico, dalla postura delle mani al peso delle braccia.
-                </p>
-              </div>
-              <div class="martial__principle">
-                <h4><SiteIcon name="target" :size="18" color="var(--color-accent)" /> Concentrazione e Presenza</h4>
-                <p>
-                  La capacità di essere completamente presenti nel momento — fondamentale
-                  nel combattimento — è la stessa che permette di entrare nel cuore
-                  di un brano musicale durante l'esecuzione.
-                </p>
-              </div>
-              <div class="martial__principle">
-                <h4><SiteIcon name="mountain" :size="18" color="var(--color-accent)" /> Perseveranza nel Percorso</h4>
-                <p>
-                  Nelle arti marziali, come nella musica, il progresso arriva attraverso
-                  la ripetizione paziente e la fiducia nel processo. Non esistono scorciatoie,
-                  ma ogni passo è un mattone verso la maestria.
-                </p>
-              </div>
-              <div class="martial__principle">
-                <h4><SiteIcon name="wave" :size="18" color="var(--color-accent)" /> Equilibrio tra Forza e Morbidezza</h4>
-                <p>
-                  Un buon marzialista sa quando usare la forza e quando cedere.
-                  Lo stesso vale per il pianista: la potenza di un fortissimo
-                  e la delicatezza di un pianissimo nascono dalla stessa intelligenza corporea.
-                </p>
-              </div>
-            </div>
-
-            <p class="martial__conclusion">
-              Queste qualità — disciplina, pazienza, consapevolezza — le porto ogni giorno
-              nelle mie lezioni. Credo che un insegnante debba trasmettere non solo nozioni
-              musicali, ma anche un approccio alla crescita che va oltre la tastiera.
+            <p>
+              Praticare arti marziali mi ha permesso di avere una maggiore
+              <strong>consapevolezza del corpo</strong> e, al pianoforte, di controllare
+              e poi trasmettere una gestualità consapevole.
+            </p>
+            <p>
+              La <strong>concentrazione</strong> e la <strong>presenza</strong> permettono di
+              essere completamente immersi in ciò che stiamo facendo, sia esso un momento
+              di studio, una lezione o un'esecuzione pubblica.
+            </p>
+            <p>
+              E per finire, prima il pianoforte e poi le arti marziali mi hanno insegnato la
+              <strong>perseveranza nel percorso</strong>: il progresso arriva attraverso la
+              ripetizione paziente e la fiducia nel processo. Non esistono scorciatoie,
+              ogni passo è un mattone fondamentale.
             </p>
           </div>
           <div class="martial__visual">
@@ -224,7 +207,8 @@
         <div class="didattica__content">
           <p>
             La mia attività didattica è frutto di un percorso mirato svolto negli anni
-            di studio, attraverso <strong>tirocinio attivo di classe</strong> presso il Conservatorio.
+            di studio, attraverso <strong>tirocinio attivo di classe</strong> presso il Conservatorio
+            e l'esperienza in varie scuole private.
           </p>
           <p>
             Nel 2021 ho preso parte al <strong>Corso di formazione metodologica e didattica
@@ -232,10 +216,34 @@
             la prassi e l'approccio risolutivo, con particolare focus sulle varie metodologie
             di insegnamento e i metodi utilizzati.
           </p>
+        </div>
+
+        <div id="voci-dal-silenzio" class="didattica__content voci">
+          <h3>Voci dal Silenzio: Le Compositrici Dimenticate</h3>
+          <div class="section__divider"></div>
+          <p class="voci__intro">
+            Per secoli, donne straordinarie hanno composto musica di altissimo valore,
+            spesso ai margini della storia. Riscoprirle è un atto di giustizia e di
+            arricchimento musicale.
+          </p>
           <p>
-            Credo fermamente che l'insegnamento sia un atto creativo tanto quanto l'esecuzione:
-            ogni allievo è diverso, e il ruolo dell'insegnante è trovare la chiave giusta
-            per sbloccare il potenziale di ciascuno.
+            Durante il mio percorso di formazione, ho avuto l'opportunità di approfondire
+            il tema della <strong>donna-musicista</strong> attraverso un corso dedicato,
+            dove sono state prese in esame le vite e le opere di compositrici che hanno vissuto
+            ai margini in un periodo storico di enorme produzione musicale.
+          </p>
+          <p>
+            Questa esperienza ha trasformato profondamente la mia visione del repertorio:
+            non si tratta solo di riscoprire brani dimenticati, ma di restituire una voce
+            a personalità artistiche che meritano il loro posto nella storia della musica.
+            Oggi integro attivamente compositrici come <strong>Clara Schumann</strong>,
+            <strong>Amy Beach</strong>, <strong>Fanny Mendelssohn</strong> e
+            <strong>Cécile Chaminade</strong> nelle mie lezioni e nei miei programmi.
+          </p>
+          <p>
+            Integrare questo repertorio nello studio del pianoforte non è solo un atto di
+            riscoperta: è un modo per offrire agli allievi una visione più completa e onesta
+            della storia della musica.
           </p>
         </div>
 
@@ -266,10 +274,9 @@
 
 <script setup>
 import { useHead } from '@unhead/vue'
-import SiteIcon from '@/components/SiteIcon.vue'
 
 useHead({
-  title: 'Chi Sono | Chiara Dalla Torre - Maestro di Pianoforte',
+  title: 'Chi Sono | Chiara Dalla Torre - Pianoforte',
   meta: [
     {
       name: 'description',
@@ -279,7 +286,7 @@ useHead({
     {
       name: 'keywords',
       content:
-        'Chiara Dalla Torre biografia, pianista San Donà di Piave, Conservatorio Steffani, arti marziali e musica, insegnante pianoforte',
+        'Chiara Dalla Torre biografia, pianista San Donà di Piave, Conservatorio Steffani, arti marziali e musica, compositrici donne, Clara Schumann, Fanny Mendelssohn, insegnante pianoforte',
     },
   ],
 })
@@ -451,39 +458,6 @@ useHead({
   margin-bottom: 1.5rem;
 }
 
-.martial__principles {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.martial__principle {
-  padding: 1.5rem;
-  background: var(--color-bg-alt);
-  border-radius: var(--radius);
-}
-
-.martial__principle h4 {
-  font-family: var(--font-heading);
-  font-size: 1.05rem;
-  margin-bottom: 0.75rem;
-  color: var(--color-primary);
-}
-
-.martial__principle p {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  margin-bottom: 0;
-}
-
-.martial__conclusion {
-  font-size: 1.05rem;
-  color: var(--color-secondary);
-  font-weight: 400;
-  margin-top: 1rem;
-}
-
 .martial__visual {
   display: flex;
   flex-direction: column;
@@ -525,10 +499,6 @@ useHead({
     gap: 2rem;
   }
 
-  .martial__principles {
-    grid-template-columns: 1fr;
-  }
-
   .martial__visual {
     order: -1;
   }
@@ -544,5 +514,14 @@ useHead({
 .didattica__content p {
   font-size: 1.05rem;
   line-height: 1.8;
+}
+
+.voci {
+  margin-top: 4rem;
+  scroll-margin-top: calc(var(--nav-height) + 1.5rem);
+}
+
+.voci__intro {
+  color: var(--color-text-light);
 }
 </style>

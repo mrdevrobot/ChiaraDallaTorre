@@ -54,6 +54,9 @@ const paths = {
   // Mail
   mail: '<rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 4 12 13 2 4"/>',
 
+  // Phone
+  phone: '<path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/>',
+
   // Check
   check: '<polyline points="20 6 9 17 4 12"/>',
 

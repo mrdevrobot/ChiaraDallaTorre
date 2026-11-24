@@ -4,10 +4,10 @@
       <div class="footer__inner">
         <div class="footer__brand">
           <h3 class="footer__name">Chiara Dalla Torre</h3>
-          <p class="footer__tagline">Maestro di Pianoforte</p>
+          <p class="footer__tagline">Pianoforte</p>
           <p class="footer__desc">
             Diplomata al Conservatorio "A. Steffani" di Castelfranco Veneto.
-            Lezioni per tutti i livelli nella zona di San Donà di Piave.
+            Lezioni per tutti i livelli a Noventa di Piave.
           </p>
         </div>
         <div class="footer__links">
@@ -15,14 +15,16 @@
           <router-link to="/">Home</router-link>
           <router-link to="/chi-sono">Chi Sono</router-link>
           <router-link to="/lezioni">Lezioni</router-link>
-          <router-link to="/musica">Musica</router-link>
           <router-link to="/contatti">Contatti</router-link>
         </div>
         <div class="footer__contact">
           <h4>Contatti</h4>
-          <p>San Donà di Piave (VE)</p>
+          <p>Via Treponti 34, Noventa di Piave (VE)</p>
           <p>
-            <a href="mailto:info@chiaradallatorre.it">info@chiaradallatorre.it</a>
+            <a href="mailto:dallatorrechiara@yahoo.it">dallatorrechiara@yahoo.it</a>
+          </p>
+          <p>
+            <a href="https://wa.me/393483046739" target="_blank" rel="noopener">WhatsApp 348 3046739</a>
           </p>
         </div>
       </div>

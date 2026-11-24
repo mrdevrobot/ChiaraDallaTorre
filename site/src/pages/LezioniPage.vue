@@ -6,7 +6,7 @@
         <h1>Lezioni di Pianoforte</h1>
         <div class="section__divider" style="margin-top: 1rem;"></div>
         <p class="page-hero__sub">
-          Percorsi personalizzati per ogni livello, dalla prima nota al palcoscenico
+          Percorsi personalizzati per ogni livello
         </p>
       </div>
     </section>
@@ -32,7 +32,7 @@
     <!-- Livelli -->
     <section class="section section--alt">
       <div class="container">
-        <h2 class="section__title">Tre Livelli, Un Solo Obiettivo</h2>
+        <h2 class="section__title">Tre Livelli: Pianoforte Principale</h2>
         <div class="section__divider"></div>
         <p class="section__subtitle">
           Crescere musicalmente, indipendentemente dal punto di partenza
@@ -82,13 +82,12 @@
                 <li>Scala, arpeggi e studi tecnici progressivi</li>
                 <li>Analisi armonica e formale dei brani</li>
                 <li>Repertorio dal Barocco al Romanticismo</li>
-                <li>Approfondimento dell'uso del pedale</li>
+                <li>Approfondimento dell'uso dei pedali</li>
                 <li>Studio dell'interpretazione e dello stile</li>
                 <li>Introduzione alla musica da camera</li>
               </ul>
               <p class="level__who">
-                <strong>Ideale per:</strong> allievi con 2-4 anni di studio
-                che vogliono fare un salto di qualità.
+                <strong>Ideale per:</strong> allievi con 2-4 anni di studio.
               </p>
             </div>
           </div>
@@ -97,7 +96,7 @@
           <div class="level">
             <div class="level__header level__header--adv">
               <span class="level__badge">Livello Avanzato</span>
-              <h3>Verso la Maestria</h3>
+              <h3>Perfezionamento</h3>
             </div>
             <div class="level__body">
               <p class="level__desc">
@@ -106,7 +105,7 @@
               </p>
               <h4>Cosa imparerai:</h4>
               <ul class="level__list">
-                <li>Repertorio solistico avanzato (Bach, Beethoven, Chopin, Liszt...)</li>
+                <li>Repertorio solistico avanzato</li>
                 <li>Tecnica avanzata e virtuosismo</li>
                 <li>Preparazione a esami di Conservatorio</li>
                 <li>Preparazione a concorsi pianistici</li>
@@ -114,8 +113,7 @@
                 <li>Repertorio femminile e contemporaneo</li>
               </ul>
               <p class="level__who">
-                <strong>Ideale per:</strong> pianisti con solida preparazione
-                che puntano all'eccellenza.
+                <strong>Ideale per:</strong> pianisti con solida preparazione.
               </p>
             </div>
           </div>
@@ -123,54 +121,26 @@
       </div>
     </section>
 
-    <!-- Pacchetti -->
+    <!-- Percorsi -->
     <section class="section packages">
       <div class="container">
-        <h2 class="section__title">Pacchetti Lezioni</h2>
+        <h2 class="section__title">Percorsi</h2>
         <div class="section__divider"></div>
         <p class="section__subtitle">
           Soluzioni flessibili pensate per ogni esigenza e ritmo di apprendimento
         </p>
 
         <div class="grid grid--3">
-          <div class="card package">
-            <div class="package__header">
-              <h3>Scoperta</h3>
-              <p class="package__sessions">4 lezioni</p>
-            </div>
-            <div class="package__body">
-              <ul>
-                <li>4 lezioni individuali da 45 minuti</li>
-                <li>Valutazione iniziale del livello</li>
-                <li>Piano di studio personalizzato</li>
-                <li>Materiale didattico incluso</li>
-              </ul>
-              <p class="package__note">
-                Perfetto per chi vuole provare e capire se il pianoforte fa per sé.
-              </p>
-            </div>
-            <router-link to="/contatti" class="btn btn--outline package__btn">
-              Richiedi Info
-            </router-link>
-          </div>
-
           <div class="card package package--featured">
-            <div class="package__badge">Più scelto</div>
             <div class="package__header">
-              <h3>Percorso</h3>
-              <p class="package__sessions">12 lezioni</p>
+              <h3>Pianoforte Principale</h3>
+              <p class="package__sessions">Lezioni da 60’ o più</p>
             </div>
             <div class="package__body">
               <ul>
-                <li>12 lezioni individuali da 60 minuti</li>
-                <li>Percorso trimestrale strutturato</li>
-                <li>Verifiche periodiche del progresso</li>
-                <li>Materiale didattico incluso</li>
-                <li>Supporto tra una lezione e l'altra</li>
+                <li>Tre livelli: base, intermedio e avanzato</li>
+                <li>Teoria base</li>
               </ul>
-              <p class="package__note">
-                Il formato ideale per un apprendimento costante e progressivo.
-              </p>
             </div>
             <router-link to="/contatti" class="btn btn--primary package__btn">
               Richiedi Info
@@ -179,26 +149,56 @@
 
           <div class="card package">
             <div class="package__header">
-              <h3>Intensivo</h3>
-              <p class="package__sessions">24 lezioni</p>
+              <h3>Pianoforte Complementare</h3>
+              <p class="package__sessions">Lezioni da 45’ – 60’</p>
             </div>
             <div class="package__body">
               <ul>
-                <li>24 lezioni individuali da 60 minuti</li>
-                <li>Percorso semestrale completo</li>
-                <li>Preparazione esami/concorsi</li>
-                <li>Materiale didattico incluso</li>
-                <li>Supporto continuo e feedback</li>
-                <li>Possibilità di lezione extra mensile</li>
+                <li>Rivolto a chi studia un altro strumento con obbligo di pianoforte complementare</li>
+                <li>Possibilità di certificazioni in conservatorio</li>
               </ul>
-              <p class="package__note">
-                Per chi è determinato a raggiungere obiettivi ambiziosi.
-              </p>
             </div>
             <router-link to="/contatti" class="btn btn--outline package__btn">
               Richiedi Info
             </router-link>
           </div>
+
+          <div class="card package">
+            <div class="package__header">
+              <h3>Teoria, Ritmica e Percezione Musicale</h3>
+              <p class="package__sessions">Lezioni da 45’</p>
+            </div>
+            <div class="package__body">
+              <ul>
+                <li>Teoria musicale</li>
+                <li>Lettura parlata e cantata</li>
+                <li>Lettura ritmica</li>
+                <li>Dettati ritmico-melodici</li>
+                <li>Ear training</li>
+                <li>Possibilità di certificazioni in conservatorio</li>
+              </ul>
+            </div>
+            <router-link to="/contatti" class="btn btn--outline package__btn">
+              Richiedi Info
+            </router-link>
+          </div>
+        </div>
+
+        <div class="packages__text">
+          <p>
+            Le lezioni di <strong>Pianoforte Principale</strong> sono generalmente da 60’ e
+            comprendono una parte teorica finalizzata alla comprensione dei brani studiati.
+          </p>
+          <p>
+            Le lezioni di <strong>Pianoforte Complementare</strong> variano da 45’ a 60’,
+            a discrezione dell'allievo/a.
+          </p>
+          <p>
+            Le lezioni di <strong>Teoria, Ritmica e Percezione Musicale</strong> sono da 45’ e
+            affrontano per intero tutta la parte teorica della musica. Sono dedicate a chi
+            desidera preparare certificazioni per il conservatorio, ma anche a chi sceglie di
+            avere una maggiore conoscenza della musica a livello teorico.
+          </p>
         </div>
 
         <p style="text-align: center; margin-top: 2rem; color: var(--color-text-light); font-size: 0.9rem;">
@@ -216,7 +216,7 @@
             <div class="section__divider" style="margin-left: 0;"></div>
             <p>
               Le lezioni si svolgono presso il mio studio privato situato a
-              <strong>San Donà di Piave (VE)</strong>, in un ambiente accogliente
+              <strong>Noventa di Piave (VE)</strong>, in via Treponti 34, in un ambiente accogliente
               e attrezzato con pianoforte acustico.
             </p>
             <p>
@@ -228,8 +228,8 @@
               <div class="location__detail">
                 <span class="location__icon"><SiteIcon name="mapPin" :size="20" /></span>
                 <div>
-                  <strong>San Donà di Piave (VE)</strong>
-                  <span>Veneto, Italia</span>
+                  <strong>Noventa di Piave (VE)</strong>
+                  <span>Via Treponti 34</span>
                 </div>
               </div>
               <div class="location__detail">
@@ -243,7 +243,7 @@
                 <span class="location__icon"><SiteIcon name="clock" :size="20" /></span>
                 <div>
                   <strong>Orari Flessibili</strong>
-                  <span>Pomeriggio e sera, anche il sabato</span>
+                  <span>Lun–Sab mattina, giovedì e sabato pomeriggio</span>
                 </div>
               </div>
             </div>
@@ -285,12 +285,12 @@ useHead({
     {
       name: 'description',
       content:
-        'Lezioni di pianoforte individuali a San Donà di Piave per tutti i livelli: base, intermedio e avanzato. Pacchetti personalizzati e prima lezione di prova gratuita.',
+        'Lezioni di pianoforte individuali a Noventa di Piave per tutti i livelli: base, intermedio e avanzato. Pianoforte principale, complementare e teoria musicale.',
     },
     {
       name: 'keywords',
       content:
-        'lezioni pianoforte San Donà di Piave, corsi pianoforte principianti, lezioni pianoforte avanzato, pacchetti lezioni pianoforte, insegnante privato pianoforte Veneto',
+        'lezioni pianoforte Noventa di Piave, lezioni pianoforte San Donà di Piave, corsi pianoforte principianti, lezioni pianoforte avanzato, pianoforte complementare, teoria musicale, insegnante privato pianoforte Veneto',
     },
   ],
 })
@@ -320,12 +320,14 @@ useHead({
 
 /* Levels */
 .levels {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
 .level {
+  display: flex;
+  flex-direction: column;
   background: var(--color-white);
   border-radius: var(--radius);
   overflow: hidden;
@@ -338,7 +340,7 @@ useHead({
 }
 
 .level__header {
-  padding: 2rem 2.5rem;
+  padding: 2rem;
   color: var(--color-white);
 }
 
@@ -369,7 +371,10 @@ useHead({
 }
 
 .level__body {
-  padding: 2rem 2.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
 }
 
 .level__desc {
@@ -387,7 +392,6 @@ useHead({
 
 .level__list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 0.6rem;
   margin-bottom: 1.5rem;
 }
@@ -410,12 +414,14 @@ useHead({
 .level__who {
   font-size: 0.9rem;
   color: var(--color-text-light);
+  margin-top: auto;
   padding-top: 1rem;
   border-top: 1px solid var(--color-border);
 }
 
-@media (max-width: 768px) {
-  .level__list {
+@media (max-width: 1000px) {
+  .levels,
+  .packages .grid--3 {
     grid-template-columns: 1fr;
   }
 }
@@ -431,22 +437,7 @@ useHead({
 
 .package--featured {
   border: 2px solid var(--color-accent);
-  transform: scale(1.03);
-}
-
-.package__badge {
-  position: absolute;
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--color-accent);
-  color: var(--color-white);
-  font-size: 0.75rem;
-  font-weight: 500;
-  padding: 0.3rem 1rem;
-  border-radius: 20px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  box-shadow: var(--shadow-md);
 }
 
 .package__header {
@@ -489,11 +480,10 @@ useHead({
   font-weight: 600;
 }
 
-.package__note {
-  font-size: 0.85rem;
-  color: var(--color-text-light);
-  font-style: italic;
-  margin-top: 1rem;
+.packages__text {
+  max-width: 800px;
+  margin: 3rem auto 0;
+  text-align: center;
 }
 
 .package__btn {
@@ -566,10 +556,6 @@ useHead({
   .location__grid {
     grid-template-columns: 1fr;
     gap: 2rem;
-  }
-
-  .package--featured {
-    transform: none;
   }
 }
 </style>
