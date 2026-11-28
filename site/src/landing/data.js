@@ -195,7 +195,7 @@ export const ZONE = [
       {
         h2: 'Uscire dalla città per suonare',
         p: [
-          'Lo studio è un luogo raccolto, con pianoforte acustico. Ogni lezione è uno spazio protetto, dove la curiosità è benvenuta e l’errore fa parte del processo.',
+          'Lo studio è un luogo raccolto, con pianoforte acustico.',
           'Per chi viene da Mestre le mattine infrasettimanali hanno un vantaggio pratico: si viaggia in senso opposto a chi va a lavorare in città.',
         ],
       },
@@ -228,7 +228,7 @@ export const PERCORSI = [
     description:
       'Lezioni individuali di pianoforte per bambini dai 6 anni a Noventa di Piave, vicino a San Donà: postura, lettura, ritmo e primi brani.',
     h1: 'Lezioni di pianoforte per bambini dai 6 anni',
-    lead: 'I primi anni decidono il rapporto con lo strumento. Si parte dall’ascolto e dal gioco serio di mettere insieme due mani, occhi e orecchie.',
+    lead: 'Il legame con lo strumento nasce nei primi anni. Imparare a scoprire la musica divertendosi.',
     sections: [
       {
         h2: 'Cosa si impara nel primo periodo',
@@ -342,7 +342,7 @@ export const PERCORSI = [
       {
         h2: 'Presenza davanti a una commissione',
         p: [
-          'La concentrazione si allena. Dalle arti marziali ho imparato la ripetizione paziente e la fiducia nel processo: non esistono scorciatoie, ogni passo è un mattone.',
+          'La concentrazione si allena. Lo stesso vale per la gestione dell’ansia e dell’esibizione.',
         ],
       },
     ],
@@ -365,7 +365,7 @@ export const PERCORSI = [
     description:
       'Pianoforte complementare per chi studia un altro strumento: lezioni da 45 o 60 minuti a Noventa di Piave, con possibilità di certificazioni.',
     h1: 'Pianoforte complementare per chi studia un altro strumento',
-    lead: 'Per chi ha il pianoforte come obbligo accanto al proprio strumento e vuole farne qualcosa di utile.',
+    lead: 'Per chi ha il pianoforte come obbligo accanto al proprio strumento.',
     sections: [
       {
         h2: 'A chi si rivolge',

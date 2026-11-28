@@ -4,12 +4,12 @@
     <section class="hero">
       <div class="hero__overlay"></div>
       <div class="container hero__content">
-        <span class="hero__greeting">Benvenuti</span>
+        <span class="hero__greeting">Benvenuti e Benvenute</span>
         <h1 class="hero__title">Chiara Dalla Torre</h1>
         <div class="hero__divider"></div>
         <p class="hero__subtitle">Pianoforte</p>
         <p class="hero__desc">
-          Un percorso musicale pensato per ogni allievo, dove tecnica,
+          Un percorso musicale pensato per ogni persona, dove tecnica,
           espressione e passione si fondono in un'esperienza unica.
         </p>
         <div class="hero__actions">
@@ -72,28 +72,27 @@
             <div class="pillar__icon"><SiteIcon name="target" :size="32" color="var(--color-secondary)" /></div>
             <h3>Presenza</h3>
             <p>
-              Partecipazione attiva: uno scambio continuo tra allievo e insegnante.
-              Concentrazione sul momento presente e desiderio di migliorarsi
-              continuamente.
+              Una partecipazione attiva, basata su uno scambio continuo tra allievo/a
+              e insegnante, che unisce la piena presenza nel qui e ora al desiderio
+              costante di migliorarsi.
             </p>
           </div>
           <div class="card pillar">
             <div class="pillar__icon"><SiteIcon name="shield" :size="32" color="var(--color-secondary)" /></div>
             <h3>Disciplina</h3>
             <p>
-              La pratica delle arti marziali mi ha insegnato la perseveranza,
-              la costanza, il controllo del corpo e della mente. E la pazienza:
-              normalizzare il tempo che si impiega per raggiungere un obiettivo,
-              lavorare con calma e ad hoc per ogni allievo, avere il tempo di maturare
-              a livello musicale e la calma di curare i piccoli dettagli.
+              La pratica delle arti marziali mi ha insegnato la costanza, la perseveranza
+              e il controllo di corpo e mente. Soprattutto, mi ha educato alla pazienza:
+              accettare che ogni obiettivo richiede il suo tempo naturale.
             </p>
           </div>
           <div class="card pillar">
             <div class="pillar__icon"><SiteIcon name="music" :size="32" color="var(--color-secondary)" /></div>
             <h3>Passione</h3>
             <p>
-              Insegnare con trasporto, stimolare, lasciarsi emozionare, imparare
-              a sentire e a trasmettere un contenuto attraverso il suono.
+              Un insegnamento empatico e coinvolgente, in cui la passione diventa il primo
+              strumento per accendere la curiosità di chi suona. Apprendere significa, prima
+              di tutto, imparare a sentire e a lasciarsi emozionare.
             </p>
           </div>
         </div>

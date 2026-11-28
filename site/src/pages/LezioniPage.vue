@@ -22,10 +22,6 @@
           unisca <strong>rigore tecnico</strong>, <strong>espressione artistica</strong>
           e soprattutto <strong>il piacere di fare musica</strong>.
         </p>
-        <p style="text-align: center; font-size: 1.05rem; line-height: 1.8; color: var(--color-text-light);">
-          Ogni lezione è uno spazio protetto dove la curiosità è benvenuta,
-          l'errore è parte del processo e la crescita è l'obiettivo condiviso.
-        </p>
       </div>
     </section>
 
@@ -139,7 +135,8 @@
             <div class="package__body">
               <ul>
                 <li>Tre livelli: base, intermedio e avanzato</li>
-                <li>Teoria base</li>
+                <li>Teoria musicale applicata al repertorio</li>
+                <li>Possibilità di certificazioni in conservatorio</li>
               </ul>
             </div>
             <router-link to="/contatti/" class="btn btn--primary package__btn">
@@ -184,23 +181,6 @@
           </div>
         </div>
 
-        <div class="packages__text">
-          <p>
-            Le lezioni di <strong>Pianoforte Principale</strong> sono generalmente da 60’ e
-            comprendono una parte teorica finalizzata alla comprensione dei brani studiati.
-          </p>
-          <p>
-            Le lezioni di <strong>Pianoforte Complementare</strong> variano da 45’ a 60’,
-            a discrezione dell'allievo/a.
-          </p>
-          <p>
-            Le lezioni di <strong>Teoria, Ritmica e Percezione Musicale</strong> sono da 45’ e
-            affrontano per intero tutta la parte teorica della musica. Sono dedicate a chi
-            desidera preparare certificazioni per il conservatorio, ma anche a chi sceglie di
-            avere una maggiore conoscenza della musica a livello teorico.
-          </p>
-        </div>
-
         <p style="text-align: center; margin-top: 2rem; color: var(--color-text-light); font-size: 0.9rem;">
           I prezzi vengono comunicati su richiesta. La prima lezione conoscitiva è senza impegno.
         </p>
@@ -236,7 +216,7 @@
                 <span class="location__icon"><SiteIcon name="piano" :size="20" /></span>
                 <div>
                   <strong>Pianoforte Acustico</strong>
-                  <span>Studio attrezzato e insonorizzato</span>
+                  <span>Studio attrezzato</span>
                 </div>
               </div>
               <div class="location__detail">
@@ -318,9 +298,12 @@ usePageSeo({
   gap: 2rem;
 }
 
+/* subgrid: le intestazioni dei tre livelli hanno la stessa altezza, così i testi partono allineati */
 .level {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-row: span 2;
+  grid-template-rows: subgrid;
+  row-gap: 0;
   background: var(--color-white);
   border-radius: var(--radius);
   overflow: hidden;
@@ -471,12 +454,6 @@ usePageSeo({
   left: 0;
   color: var(--color-accent);
   font-weight: 600;
-}
-
-.packages__text {
-  max-width: 800px;
-  margin: 3rem auto 0;
-  text-align: center;
 }
 
 .package__btn {

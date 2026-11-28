@@ -161,9 +161,9 @@
             </p>
 
             <p>
-              Praticare arti marziali mi ha permesso di avere una maggiore
-              <strong>consapevolezza del corpo</strong> e, al pianoforte, di controllare
-              e poi trasmettere una gestualità consapevole.
+              La pratica delle arti marziali ha affinato la mia
+              <strong>consapevolezza corporea</strong>, permettendomi di tradurre questo
+              controllo in una gestualità più intenzionale ed espressiva al pianoforte.
             </p>
             <p>
               La <strong>concentrazione</strong> e la <strong>presenza</strong> permettono di
@@ -174,7 +174,7 @@
               E per finire, prima il pianoforte e poi le arti marziali mi hanno insegnato la
               <strong>perseveranza nel percorso</strong>: il progresso arriva attraverso la
               ripetizione paziente e la fiducia nel processo. Non esistono scorciatoie,
-              ogni passo è un mattone fondamentale.
+              ogni progresso rappresenta un tassello fondamentale.
             </p>
           </div>
           <div class="martial__visual">
@@ -222,8 +222,8 @@
           <h3>Voci dal Silenzio: Le Compositrici Dimenticate</h3>
           <div class="section__divider"></div>
           <p class="voci__intro">
-            Per secoli, donne straordinarie hanno composto musica di altissimo valore,
-            spesso ai margini della storia. Riscoprirle è un atto di giustizia e di
+            Per secoli, donne straordinarie hanno composto musica di altissimo valore.
+            Riscoprirle è un atto di giustizia e di
             arricchimento musicale.
           </p>
           <p>
@@ -239,11 +239,6 @@
             Oggi integro attivamente compositrici come <strong>Clara Schumann</strong>,
             <strong>Amy Beach</strong>, <strong>Fanny Mendelssohn</strong> e
             <strong>Cécile Chaminade</strong> nelle mie lezioni e nei miei programmi.
-          </p>
-          <p>
-            Integrare questo repertorio nello studio del pianoforte non è solo un atto di
-            riscoperta: è un modo per offrire agli allievi una visione più completa e onesta
-            della storia della musica.
           </p>
         </div>
 
